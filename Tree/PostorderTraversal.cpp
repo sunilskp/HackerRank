@@ -1,5 +1,5 @@
 /*
-Post Order Traversal in C++
+Postorder Traversal in C++
 */
 
 
