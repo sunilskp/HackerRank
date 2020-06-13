@@ -7,7 +7,7 @@ vector<int> dynamicArray(int n, vector<vector<int>> queries)
     vector <int> ans;
     for(int i=0; i<len; i++)
       {   
-          int k = (last ^ queries[i][1])%n;
+          int k = (last ^ queries[i][1])%n; 
           if(queries[i][0]==1)
           {
               seq[k].push_back(queries[i][2]);
