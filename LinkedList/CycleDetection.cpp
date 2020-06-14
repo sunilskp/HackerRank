@@ -3,17 +3,17 @@ We will use the Hare and Tortoise Algo
   */
 
 bool has_cycle(SinglyLinkedListNode* head) {
-SinglyLinkedListNode *t = head;
-SinglyLinkedListNode *r = head;
+SinglyLinkedListNode *tor = head;
+SinglyLinkedListNode *har = head;
 if(head == NULL || head->next==NULL)
 {
     return false;
 }
-while( r!=NULL&&r->next!=NULL)
+while( har!=NULL&&har->next!=NULL)
 {
-    t = t->next;   // Tortoise Node
-    r = r->next->next; // Hare Node
-    if(t==r)
+    tor = tor->next;   // Tortoise Node
+    har = har->next->next; // Hare Node
+    if(tor==har)
     {
         return true;
         break;
