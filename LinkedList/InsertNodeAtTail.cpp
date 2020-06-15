@@ -1,24 +1,25 @@
 SinglyLinkedListNode* insertNodeAtTail(SinglyLinkedListNode* head, int data) {
 
-SinglyLinkedListNode *news , *p;
+SinglyLinkedListNode *ne , *p;
 
-news = (SinglyLinkedListNode*)malloc(sizeof(SinglyLinkedListNode));
-p     = (SinglyLinkedListNode*)malloc(sizeof(SinglyLinkedListNode));
+ne   =    (SinglyLinkedListNode*)malloc(sizeof(SinglyLinkedListNode));
+p    =    (SinglyLinkedListNode*)malloc(sizeof(SinglyLinkedListNode));
 p->next = head;
 
-news->data = data;
-news->next = NULL;
+ne->data = data;
+ne->next = NULL;
 if(!head)
 {
-head = news;
+head = ne;
 }
-else {
+else
+{
 while(p->next!=NULL)
 {
 p = p->next;
 }
-p->next = news; 
-
+p->next = ne; 
 }
+  
 return head;
 }
